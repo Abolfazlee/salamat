@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet"  href="themes/default/css/bootstrap.rtl.min.css">
+		<link rel="stylesheet"  href="themes/default/css/bootstrap-icons.css">
+		<link rel="stylesheet"  href="themes/default/css/style.css">
+		<script src="themes/default/js/jquery.min.js"></script>
+		<script src="themes/default/js/bootstrap.min.js"></script>
+		<script src="themes/default/js/script.js"></script>
+	<title>ماشین حساب</title>
+</head>
+<!-- Modal Help-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">راهنما</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+			<h5><p class="badge bg-warning">علامت +<h6>از این علامت برای جمع استفاده میشود.</h6></p></h5>
+			<h5><p class="badge bg-warning">علامت -<h6>از این علامت برای تفریق استفاده میشود.</h6></p></h5>
+			<h5><p class="badge bg-warning">علامت /<h6>از این علامت برای تقسیم استفاده میشود.</h6></p></h5>
+			<h5><p class="badge bg-warning">علامت *<h6>از این علامت برای ضرب استفاده میشود.</h6></p></h5>
+			<h5><p class="badge bg-warning">علامت ^<h6>از این علامت برای توان استفاده میشود.</h6></p></h5>
+			<h5><p class="badge bg-warning">علامت !<h6>از این علامت برای فاکتوریل استفاده میشود.</h6></p></h5>
+			<h5><p class="badge bg-warning">دکمه C<h6>از این دکمه برای پاک کردن استفاده میشود. </h6></p></h5>
+
+      </div>
+    </div>
+  </div>
+</div>
+<body class="bg-primary">
+	<main>
+		<article>
+				<div class="card bg-dark" id="borderCal">
+					<input type="text" id="textBox" class="form-control" autofocus>
+					<span id="theree">
+					<input type="button" id="n9" class="btn btn-outline-primary" value="9">
+					<input type="button" id="n8" class="btn btn-outline-primary" value="8">
+					<input type="button" id="n7" class="btn btn-outline-primary" value="7">
+					<span id="op1">
+					<input type="button" id="jaam" class="btn btn-outline-success" value="+">
+					<input type="button" id="menha" class="btn btn-outline-success" value="-">
+					</span>
+					</span>
+					<span id="theree">
+					<input type="button" id="n6" class="btn btn-outline-primary" value="6">
+					<input type="button" id="n5" class="btn btn-outline-primary" value="5">
+					<input type="button" id="n4" class="btn btn-outline-primary" value="4">
+					<span id="op1">
+					<input type="button" id="zarb" class="btn btn-outline-success" value="*">
+					<input type="button" id="taghsim" class="btn btn-outline-success" value="/">
+					</span>
+					</span>
+					<span id="theree">
+					<input type="button" id="n3" class="btn btn-outline-primary" value="3">
+					<input type="button" id="n2" class="btn btn-outline-primary" value="2">
+					<input type="button" id="n1" class="btn btn-outline-primary" value="1">
+					<span id="op1">
+					<input type="button" id="tavan" class="btn btn-outline-success" value="^">
+					<input type="button" id="fact" class="btn btn-outline-success" value="!">
+					</span>
+					</span>
+					<span id="theree">
+					<input type="button" id="n0" name="sefr" class="btn btn-outline-primary" value="0">
+					<span id="op1">
+					<input type="button" id="mosavi" name="mosavi" class="btn btn-outline-success" value="=">
+					<input type="button" id="delete" name="delete" class="btn btn-outline-success" value="C">
+					</span>
+					</span>
+				</div>
+				<p align="center"><input id="alignCenter" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" value="راهنما"></p>
+		</article>
+	</main>
+</body>
+</html>
